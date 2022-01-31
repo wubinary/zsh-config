@@ -160,4 +160,13 @@ if [ "/mnt/c/Users/wubinray4790k" = "${PWD}" ] || [ "/User/${USER}" = "${PWD}" ]
     cd ~/Desktop/
 fi 
 
+# swap two files
+function swap() {
+    local TMPFILE=tmp.$$
+    mv "$1" $TMPFILE
+    mv "$2" "$1"
+    mv $TMPFILE "$2"
+}
+
+# local bin
 export PATH=$PATH:~/.local/bin/
