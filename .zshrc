@@ -128,17 +128,17 @@ alias ta='tmux a'
 
 # cuda 
 if [ -d "/usr/local/cuda/" ]; then  
-	export CUDA_HOME=/usr/local/cuda 
-	export PATH=$PATH:/usr/local/cuda/bin
-	export CPATH=$CPATH:/usr/local/cuda/include
-	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
-	export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/cuda/libnvvp 
+    export CUDA_HOME=/usr/local/cuda 
+    export PATH=$PATH:/usr/local/cuda/bin
+    export CPATH=$CPATH:/usr/local/cuda/include
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/cuda/libnvvp 
 fi 
 
 # anaconda 
 if [ -d "/home/$USER/anaconda3/" ]; then 
-	source /home/$USER/anaconda3/bin/activate
-	conda deactivate
+    source /home/$USER/anaconda3/bin/activate
+    conda deactivate
 fi
 
 # set DISPLAY to use X terminal in WSL
@@ -156,7 +156,7 @@ fi
 
 # WSL cd Desktop
 if [ "/mnt/c/Users/wubinray4790k" = "${PWD}" ] || [ "/User/${USER}" = "${PWD}" ]; then
-	mkdir -p ~/Desktop/
+    mkdir -p ~/Desktop/
     cd ~/Desktop/
 fi 
 
