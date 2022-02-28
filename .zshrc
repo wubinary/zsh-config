@@ -115,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 alias nvw='watch nvidia-smi' 
 alias ll='ls -al -lh'
 
+alias gdb='gdb -q'
 alias gst='git status' 
 alias gpl='git pull'
 alias gff='git diff'
