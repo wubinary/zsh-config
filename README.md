@@ -15,15 +15,15 @@ My Zsh Config
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
     # download auto-jump
-    git clone git://github.com/joelthelion/autojump.git
+    git clone https://github.com/wting/autojump.git
     cd autojump
     python3 install.py
 
     # download auto-suggestion
-    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git
 
     # download syntax-highlighting
-    git clone git://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
     ```
 * config my zsh
     ```CMD=
