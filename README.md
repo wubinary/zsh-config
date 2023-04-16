@@ -20,7 +20,7 @@ My Zsh Config
     python3 install.py
 
     # download auto-suggestion
-    git clone https://github.com/zsh-users/zsh-autosuggestions.git
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
     # download syntax-highlighting
     git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
